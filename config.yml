@@ -1,0 +1,26 @@
+#Auto save delay, if the server crashes players will lose items in the bank that were not yet saved, modify this accordingly.
+auto-save: 1200 
+
+#Max banks in general (mainly for ops)
+max-banks: 20   
+
+default-rows: 3
+
+#Default required permission: (This will grant the player with one bank with default rows)
+#"item.bank.user"
+
+#Banks amount permission: (Players with this permission will have access to a specific amount of banks)
+#"item.bank.vaults.<amount>"
+  
+#Bank rows permission: (Players with this permission will have a specific amount of rows for each bank)
+#"item.bank.rows.<amount>"
+  
+# %player% : player name
+# %bank% : bank index  
+title: '&8&o%player%''s bank #%bank%'
+
+messages: #Leave empty and the message won't be sent
+  usage: '&fUsage: /bank <index>'
+  banks: '&cYou only posses %banks% banks'
+  open: '&aOpening bank #%index%'
+  close: '&cClosing bank #%index%'
